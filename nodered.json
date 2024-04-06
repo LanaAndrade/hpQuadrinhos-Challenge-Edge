@@ -1,0 +1,739 @@
+[
+    {
+        "id": "a85b5cdc54a38a04",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a59672d2329426bb",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/historia",
+        "topic": "hpQuadrinhos/historia",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 20,
+        "wires": [
+            [
+                "9b4f4fa4ce3360a8",
+                "3bf0476caecc267a"
+            ]
+        ]
+    },
+    {
+        "id": "5f737512e480fa5c",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/tempoLeituraTotal",
+        "topic": "hpQuadrinhos/tempoLeituraTotal",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "b67d7d355dc829ef"
+            ]
+        ]
+    },
+    {
+        "id": "62c0ad39b699d24a",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/Amelie/Avaliacao",
+        "topic": "hpQuadrinhos/Amelie/Avaliacao",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "40e7062a867fc46f"
+            ]
+        ]
+    },
+    {
+        "id": "38e697e2516e3a4e",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/Rafael/Avaliacao",
+        "topic": "hpQuadrinhos/Rafael/Avaliacao",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "3f83d80a977e60e8"
+            ]
+        ]
+    },
+    {
+        "id": "2753fb0a599a85f7",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/Carolina/Avaliacao",
+        "topic": "hpQuadrinhos/Carolina/Avaliacao",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "d6a554e4cff989af"
+            ]
+        ]
+    },
+    {
+        "id": "a6cbd75fcdf6207f",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/Vitoria/Avaliacao",
+        "topic": "hpQuadrinhos/Vitoria/Avaliacao",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "141df9a9842c8f5b"
+            ]
+        ]
+    },
+    {
+        "id": "04274826e3562276",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/Enzo/Avaliacao",
+        "topic": "hpQuadrinhos/Enzo/Avaliacao",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "0ce6a4d9f773a95c"
+            ]
+        ]
+    },
+    {
+        "id": "7e7a64a7face5c66",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/Leo/Avaliacao",
+        "topic": "hpQuadrinhos/Leo/Avaliacao",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "a7c4a539ca5f9cad"
+            ]
+        ]
+    },
+    {
+        "id": "8d21ff7c51513989",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "Histórias Escolhidas",
+        "group": "ddb3c64dff248243",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Quantas histórias foram escolhidas",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 660,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "e7eaf67b8934b25d",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "Tempo de Leitura",
+        "group": "ddb3c64dff248243",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Tempo de Leitura",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f28c7844729c989d",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "Avaliações Amelie",
+        "group": "ddb3c64dff248243",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Amelie",
+        "label": "",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#00ff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "66db91e7eed60828",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "group": "ddb3c64dff248243",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Rafael ",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#37ff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b935e3ecc891a68d",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "group": "ddb3c64dff248243",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Carolina",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#11fa00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1af07ee40d7c4973",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "group": "ddb3c64dff248243",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Vitória",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#2bff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "bae4cd8c09c5e791",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "group": "ddb3c64dff248243",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Enzo",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#1eff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a2605704781ca984",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "group": "ddb3c64dff248243",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Léo",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#00ff04"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a2f023c735c74912",
+        "type": "mqtt in",
+        "z": "a85b5cdc54a38a04",
+        "name": "hpQuadrinhos/+/Avaliacao",
+        "topic": "hpQuadrinhos/+/Avaliacao",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7fcd102c42537550",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "877d8099b7873da7"
+            ]
+        ]
+    },
+    {
+        "id": "c9e3d77b721f4664",
+        "type": "ui_gauge",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "group": "ddb3c64dff248243",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Avaliações Médias",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "5",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#00ff04"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9b4f4fa4ce3360a8",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Quantidade de histórias escolhidas",
+        "func": "var count = context.get('count') || 0; // Obtém o valor atual do contador da memória de contexto\ncount++; // Incrementa o contador\ncontext.set('count', count); // Salva o novo valor do contador na memória de contexto\n\nmsg.payload = count; // Define a carga da mensagem como o contador atual\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 20,
+        "wires": [
+            [
+                "8d21ff7c51513989"
+            ]
+        ]
+    },
+    {
+        "id": "3bf0476caecc267a",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "História mais escolhida",
+        "func": "// Obtém os contadores armazenados na memória de contexto ou inicializa-os como zero\nvar counters = context.get('counters') || {\n    \"Amelie\": 0,\n    \"Rafael\": 0,\n    \"Carolina\": 0,\n    \"Vitoria\": 0,\n    \"Enzo\": 0,\n    \"Leo\": 0\n};\n\n// Obtém a mensagem recebida\nvar receivedString = msg.payload;\n\n// Verifica se a mensagem recebida é uma das strings desejadas\nif (counters.hasOwnProperty(receivedString)) {\n    // Incrementa o contador da string correspondente\n    counters[receivedString]++;\n}\n\n// Armazena os contadores atualizados na memória de contexto\ncontext.set('counters', counters);\n\n// Inicializa variáveis para encontrar a chave com o maior valor\nlet maiorChave = null;\nlet maiorValor = -Infinity;\n\n// Encontra a chave com o maior valor\nfor (const chave in counters) {\n    if (counters.hasOwnProperty(chave)) {\n        const valor = counters[chave];\n        if (valor > maiorValor) {\n            maiorValor = valor;\n            maiorChave = chave;\n        }\n    }\n}\n\n// Retorna a chave com o maior valor\nreturn { payload: maiorChave !== null ? maiorChave : \"Não há valor maior\" };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "5750d6d66138808b"
+            ]
+        ]
+    },
+    {
+        "id": "5750d6d66138808b",
+        "type": "ui_text",
+        "z": "a85b5cdc54a38a04",
+        "group": "ddb3c64dff248243",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "História mais escolhida",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "877d8099b7873da7",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Média Avaliações",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "c9e3d77b721f4664"
+            ]
+        ]
+    },
+    {
+        "id": "b67d7d355dc829ef",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Média Tempo",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 120,
+        "wires": [
+            [
+                "e7eaf67b8934b25d"
+            ]
+        ]
+    },
+    {
+        "id": "40e7062a867fc46f",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Av_Amelie_Media",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "f28c7844729c989d"
+            ]
+        ]
+    },
+    {
+        "id": "3f83d80a977e60e8",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Av_Rafael_Media",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "66db91e7eed60828"
+            ]
+        ]
+    },
+    {
+        "id": "d6a554e4cff989af",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Av_Carol_Media",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "b935e3ecc891a68d"
+            ]
+        ]
+    },
+    {
+        "id": "141df9a9842c8f5b",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Av_Vick_Media",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 300,
+        "wires": [
+            [
+                "1af07ee40d7c4973"
+            ]
+        ]
+    },
+    {
+        "id": "0ce6a4d9f773a95c",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Av_Enzo_Media",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "bae4cd8c09c5e791"
+            ]
+        ]
+    },
+    {
+        "id": "a7c4a539ca5f9cad",
+        "type": "function",
+        "z": "a85b5cdc54a38a04",
+        "name": "Av_Leo_Media",
+        "func": "// Obtém a soma acumulada e o contador da memória de contexto, ou inicializa-os como 0\nvar soma = context.get('soma') || 0;\nvar contador = context.get('contador') || 0;\n\n// Recebe o número\nvar numero = msg.payload;\n\n// Verifica se o número é um número\nif (typeof numero === 'number') {\n    // Adiciona o número à soma\n    soma += numero;\n    // Incrementa o contador\n    contador++;\n}\n\n// Armazena a soma acumulada e o contador na memória de contexto\ncontext.set('soma', soma);\ncontext.set('contador', contador);\n\nvar media = contador > 0 ? (soma / contador).toFixed(2) : 0;\n\n// Retorna a média\nreturn { payload: parseFloat(media) };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 380,
+        "wires": [
+            [
+                "a2605704781ca984"
+            ]
+        ]
+    },
+    {
+        "id": "7fcd102c42537550",
+        "type": "mqtt-broker",
+        "z": "a85b5cdc54a38a04",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "tls": "9329e61d0aa961a8",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ddb3c64dff248243",
+        "type": "ui_group",
+        "name": "Avaliacoes",
+        "tab": "b96607505c0553ec",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9329e61d0aa961a8",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "b96607505c0553ec",
+        "type": "ui_tab",
+        "name": "Avaliacoes",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
