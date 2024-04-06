@@ -1,0 +1,1 @@
+# hpQuadrinhos-Challenge-Edge
